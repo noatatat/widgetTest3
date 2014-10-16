@@ -26,3 +26,7 @@ NewWidget.prototype.recalculatePosition = function() {
 	console.log('resized!');
 };
 ```
+
+Чтобы можно было создавать свой виджет в окне через меню, нужно зарегистрировать свой класс с помощью метода `Window~registerWidget`.
+Имя задаётся приватным свойством `_name`.
+

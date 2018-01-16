@@ -1,6 +1,7 @@
 .main {
   position: absolute;
-  margin-top: 43px;
+  /*margin-top: 43px;*/
+  margin-top: 58px;
   left: 0;
   top: 0;
   bottom: 0;
@@ -9,10 +10,31 @@
 .header {
   position: absolute;
   width: 100%;
-  background-color: #454545;
+  /*background-color: #454545;
   height: 43px;
-  background: url('../../images/system/header-background.png');
+  background: url('../../images/system/header-background.png');*/
+  background-color: #585d70;
+  height: 54px;
 }
+
+.header::before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #6e6f73;
+  border-radius: 50%;
+  background-image: url('../../images/system/header-logo-round.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 18px;
+  margin-top: 2px;
+}
+
+#create {
+  display: none;
+}
+
 body {
   margin: 0;
   background: #f5f5f5;

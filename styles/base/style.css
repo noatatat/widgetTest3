@@ -350,9 +350,9 @@ noindex:-o-prefocus,
 div.scroll {
   display: block;
   width: 17px;
-  height: 29px;
-  border: 1px solid #8c8c8c;
-  border-bottom: 0;
+  height: 31px;
+  /*border: 1px solid #8c8c8c;
+  border-bottom: 0;*/
   /*border-bottom: #6c6c6c 1px solid;
   -moz-border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px 4px 0 0;
@@ -361,8 +361,8 @@ div.scroll {
   overflow: hidden;
   outline: none;
   right: 0;
-  top: 29px;
-  margin-right: -1px;
+  top: 30px;
+  /*margin-right: -1px;*/
   z-index: 2;
 }
 div.scroll span {

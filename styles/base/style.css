@@ -9,6 +9,9 @@
 }
 .header {
   position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   width: 100%;
   /*background-color: #454545;
   height: 43px;
@@ -17,7 +20,6 @@
   height: 54px;
   border-top: 1px solid #c0c3cc;
   border-bottom: 4px solid #c0c3cc;
-  //box-sizing: border-box;
 }
 
 .header::before {
@@ -27,11 +29,10 @@
   height: 48px;
   border: 1px solid #6e6f73;
   border-radius: 50%;
-  background-image: url('../../images/system/header-logo-round.png');
-  background-position: -1px 0;
+  background-image: url("../../images/system/header-logo-round.png");
+  background-position: 0 0;
   background-repeat: no-repeat;
   margin-left: 18px;
-  margin-top: 2px;
 }
 
 #create {
@@ -48,6 +49,27 @@ html,
 body {
   height: 100%;
 }
+
+html {
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  right: 54px;
+  bottom: 54px;
+  display: block;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 7px rgba(245, 129, 0, 0.25);
+  background-color: rgba(245, 129, 0, 1);
+  background-image: url("../../images/system/message.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .non-select {
   user-select: none;
   -moz-user-select: none;
